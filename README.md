@@ -1,7 +1,7 @@
 # postgres_practice
 
 記事はこちら
-https://qiita.com/takumiw/items/281c86d74b7049dcf846
+https://qiita.com/takumiw/items/281c86d74b7049dcf846 <br>
 https://crudzoo.com/blog/docker-postgres
 
 コマンド一覧
@@ -39,6 +39,7 @@ psql -U test test_db
 ```
 
 -f オプションを使い、実行したいSQLファイルのパスを指定する
+
 ```bash
 psql -U test test_db -f src/test_1.sql
 ```
