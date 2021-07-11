@@ -25,6 +25,12 @@ createuser -U postgres test
 #root
 createdb -U postgres -O test -E UTF8 --locale=C -T template0 test_db
 ```
+データベース fe_practice を作成
+
+```bash
+#root
+createdb -U postgres -O test -E UTF8 --locale=C -T template0 fe_practice 
+```
 
 作成したデータベースを確認
 
@@ -42,4 +48,6 @@ psql -U test test_db
 
 ```bash
 psql -U test test_db -f src/test_1.sql
+psql -U test test_db -f src/create/exists.sql
+psql -U test fe_practice -f src/fe_practice/H31_spring/create.sql
 ```

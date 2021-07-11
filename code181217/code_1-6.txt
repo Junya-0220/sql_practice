@@ -149,6 +149,17 @@ INSERT INTO Students VALUES(200,  '文学部',   '2018-09-22');
 INSERT INTO Students VALUES(201,  '工学部',   NULL);
 INSERT INTO Students VALUES(202,  '経済学部', '2018-09-25');
 
+CREATE TABLE users
+(id   INTEGER PRIMARY KEY,
+ name  VARCHAR(16) NOT NULL,
+ salary INTEGER  NOT NULL,
+ branch  VARCHAR(16) NOT NULL);
+
+INSERT INTO users VALUES(1,  'sato', 200000, 'tokyo');
+INSERT INTO users VALUES(2,  'kato', 300000, 'kanagawa');
+INSERT INTO users VALUES(3,  'ooshiro', 250000, 'saitama');
+INSERT INTO users VALUES(4,  'hirano', 200000, 'tokyo');
+INSERT INTO users VALUES(5,  'otoni', 400000, 'sizuoka');
 
 -- 提出日に NULLを含まない学部を選択する　その１： COUNT関数の利用 
 SELECT dpt 
